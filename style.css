@@ -1,0 +1,334 @@
+body{background-color: black; color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+body{background-size: cover;  background-repeat: no-repeat;}
+
+* {
+    box-sizing: border-box;
+}
+.logo  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: white 0 0 15px, white 0 0 20px;
+    animation: float 2s infinite;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+@keyframes float {
+    0% , 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+.logo h1:hover {
+    color: red;
+    text-shadow: red 0 0 15px, red 0 0 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+.navigation a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+.navigation a:hover {
+    color: red;
+    text-shadow: red 0 0 15px;
+    transform: translateY(-4px);
+}
+.navigation a:active {
+    transform: scale(0.92);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+.login {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 25px;
+}
+.login a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+.login a:first-child:hover {
+    color: red;
+    text-shadow: red 0 0 15px, red 0 0 20px;
+    transform: translateY(-4px);
+}
+.login a:nth-child(2):hover {
+    color: red;
+    text-shadow: red 0 0 15px, red 0 0 20px;
+    transform: translateY(-4px);
+}
+.login a:first-child:active {
+    transform: scale(0.92);
+}
+.login a:nth-child(2):active {
+    transform: scale(0.92);
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 80vh;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+.hero-content {
+    text-align: center;
+    padding: 20px;
+}
+.btn-hero {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+    box-shadow: white 0 0 15px;
+    transition: 0.5s ease;
+    text-decoration: none;
+    font-size: 15px;
+}
+.btn-hero:hover {
+    background-color: red;
+    color: white;
+    transform: translateY(-4px) scale(0.95);
+    box-shadow: red 0 0 15px;
+}
+.cheat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.cheat-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+.cheat-card h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    min-height: 80px;
+}
+.cheat-card p {
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    flex-grow: 1;
+    margin-top: 20px;
+}
+.cheat-card img {
+    width: 100%;
+    display: block;
+}
+.cheat-card:first-child:hover {
+    transform: scale(1.03);
+    box-shadow: white 0 0 15px;
+}
+.cheat-card:nth-child(2):hover {
+    transform: scale(1.03);
+    box-shadow: white 0 0 15px;
+}
+.cheat-card:last-child:hover {
+    transform: scale(1.03);
+    box-shadow: white 0 0 15px;
+}
+.advantages {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.advantages-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.advantages-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+.advantage-item {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 30px 20px;
+    transition: 0.5s ease;
+}
+.advantage-item .icon {
+    font-size: 30px;
+}
+.advantage-item:first-child:hover {
+    transform: scale(1.03);
+    box-shadow: red 0 0 15px;
+}
+.advantage-item:nth-child(2):hover {
+    transform: scale(1.03);
+    box-shadow: red 0 0 15px;
+}
+.advantage-item:last-child:hover {
+    transform: scale(1.03);
+    box-shadow: red 0 0 15px;
+}
+.products {
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-size: 20px;
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.products-card {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.products-card:first-child:hover {
+    transform: scale(1.03);
+    box-shadow: white 0 0 15px;
+}
+.products-card:nth-child(2):hover {
+    transform: scale(1.03);
+    box-shadow: white 0 0 15px;
+}
+.btn-buy {
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    box-shadow: white 0 0 15px;
+    transition: 0.5s ease;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+.btn-buy:hover {
+    background-color: red;
+    color: white;
+    box-shadow: red 0 0 15px;
+    transform: translateY(-4px);
+}
+.btn-buy:active {
+    transform: scale(0.92);
+}
+.products h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+.about {
+    text-align: center;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about h2 {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+footer {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+.notification {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #1e1e1e;
+    border: red 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateX(30px);
+    box-shadow: red 0 0 15px;
+}
+.notification.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+.neon-dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: red 0 0 15px, red 0 0 20px;
+    position: fixed;
+    top: 100px;
+    animation: move 10s linear infinite, sway 2s ease-in-out infinite alternate;
+}
+@keyframes move {
+    from {
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+@keyframes sway {
+    from {
+        margin-left: -10px;
+    }
+    to {
+        margin-left: 10px;
+    }
+}
